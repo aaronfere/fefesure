@@ -3,7 +3,7 @@
 
 	$credentials = parse_ini_file(".conection.ini");
 
-	$db = new mysqli($credentials["host"],$credentials["user"],'',$credentials["name"]);
+	$db = new mysqli($credentials["host"],$credentials["user"],$credentials["pass"],$credentials["name"]);
 	$db->query("SET NAMES 'utf8'");
 
 
